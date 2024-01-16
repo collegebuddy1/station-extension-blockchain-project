@@ -1,0 +1,29 @@
+@import "mixins";
+@import "font_mixins";
+
+.origin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 24px;
+  padding-bottom: 32px;
+  text-align: center;
+
+  h2 {
+    @include Large;
+    color: var(--token-light-white);
+  }
+
+  p {
+    @include X-Small;
+    color: var(--token-primary-600);
+  }
+}
+
+.icon {
+  border-radius: 50%;
+  max-width: 64px;
+  max-height: 64px;
+}

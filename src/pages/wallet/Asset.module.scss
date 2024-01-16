@@ -1,0 +1,13 @@
+@import "mixins";
+
+.asset {
+  padding: 12px;
+  border-radius: 10px;
+  position: relative; // to loading indicator
+  cursor: pointer;
+  transition: 300ms;
+
+  &:hover {
+    background-color: var(--card-bg);
+  }
+}

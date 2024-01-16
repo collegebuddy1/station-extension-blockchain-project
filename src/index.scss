@@ -1,0 +1,15 @@
+@import "theme";
+@import "fonts";
+@import "reboot";
+@import "utils";
+@import "customize";
+
+#station {
+  min-width: 400px;
+  min-height: 600px; // Chrome extension maximum height
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  background-color: var(--token-dark-100) !important;
+}

@@ -1,0 +1,17 @@
+@import "font_mixins";
+
+.component {
+  white-space: pre;
+}
+
+.small__decimal {
+  @include Large;
+}
+
+.symbol {
+  color: var(--token-light-100);
+}
+
+.block {
+  display: block;
+}

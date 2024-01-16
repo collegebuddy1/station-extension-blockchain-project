@@ -1,0 +1,66 @@
+@import "mixins";
+@import "forms";
+
+.wrapper {
+  @include flex;
+  align-items: stretch;
+}
+
+.input {
+  @include border;
+  @include size;
+}
+
+.symbol {
+  @include border;
+  @include size;
+}
+
+.before {
+  @include border;
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 0 12px;
+}
+
+.after {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* search */
+.search {
+  display: block;
+}
+
+.search__small {
+  font-size: small;
+
+  .icon {
+    display: none;
+    //width: 18px;
+    //left: 10px;
+  }
+
+  .input {
+    //padding-left: 36px;
+  }
+}
+
+.search__inline {
+  font-size: small;
+  width: calc(100% - 12px);
+  margin: 4px 6px !important;
+
+  .icon {
+    display: none;
+    width: 18px;
+    left: 10px;
+  }
+
+  .input {
+    padding-left: 36px;
+    height: 35px;
+  }
+}
